@@ -1,7 +1,5 @@
-// interface описує доступні дії без полів стану конкретного об’єкта. Ці методи неявно public abstract; клас із
-// implements мусить їх реалізувати. Це близько до контракту Protocol або абстрактного базового класу в Python, але
-// перевіряється компілятором.
-public interface FunctionLike { // Інтерфейс описує можливості без успадкування стану.
-    double value(double x); // Реалізатор повинен обчислювати значення в точці.
-    void print(double x); // Реалізатор повинен уміти друкувати результат.
+// interface — контракт методів; тут вони неявно public abstract.
+public interface FunctionLike {
+    double value(double x);
+    void print(double x);
 }
